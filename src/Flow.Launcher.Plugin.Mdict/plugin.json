@@ -1,0 +1,12 @@
+{
+  "ID": "ba3e8f71-e464-497d-9fa9-515bee26b1d0",
+  "ActionKeyword": "md",
+  "Name": "MDict",
+  "Description": "Search with MDict dictionaries",
+  "Author": "Jack251970",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/Jack251970/Flow.Launcher.Plugin.MDict",
+  "IcoPath": "Images/icon.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.MDict.dll"
+}

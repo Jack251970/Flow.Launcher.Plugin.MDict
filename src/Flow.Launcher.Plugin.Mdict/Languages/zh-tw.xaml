@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--  General  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_name">MDict</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_description">在 MDict 詞典中搜索</system:String>
+
+    <!--  Main  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">請在設定中選擇一個字典檔案</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_click_to_open_preview">點擊或按下 Enter 鍵以預覽此單字</system:String>
+
+    <!--  Settings  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">字典檔案路徑：</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_select">選擇</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_md_files">MDict 文件</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_light_theme_css">淺色主題 CSS 相對路徑：</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_dark_theme_css">深色主題 CSS 相對路徑：</system:String>
+
+</ResourceDictionary>
