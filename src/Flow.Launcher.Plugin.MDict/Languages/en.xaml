@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--  General  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_name">MDict</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_description">Search entries in MDict dictionaries</system:String>
+
+    <!--  Main  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">Please select a dictionary file in settings</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">Please enter to query in the dictionary</system:String>
+
+    <!--  Settings  -->
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">Dictionary file path:</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_select">Select</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_md_files">MDict Files</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_light_theme_css">Light theme css relative path:</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_dark_theme_css">Dark theme css relative path:</system:String>
+
+</ResourceDictionary>
