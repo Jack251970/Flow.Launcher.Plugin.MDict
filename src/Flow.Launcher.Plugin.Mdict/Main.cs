@@ -74,6 +74,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     },
                     Score = score,
                     AddSelectedCount = false,
+                    PreviewPanel = new Lazy<UserControl>(() => new PreviewPanel(word))
                 });
                 score--;
             }
