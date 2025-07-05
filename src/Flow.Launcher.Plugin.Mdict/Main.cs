@@ -59,7 +59,8 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
         else
         {
             var results = new List<Result>();
-            foreach (var word in Dict.FuzzySearch(querySearch, Settings.FuzzySize, Settings.Distance))
+            var score = Settings.FuzzySize;
+            foreach (var word in Dict.FuzzySearch(querySearch, Settings.FuzzySize, (uint)Settings.Distance))
             {
                 results.Add(new Result
                 {
@@ -70,8 +71,11 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     {
                         // TODO
                         return false;
-                    }
+                    },
+                    Score = score,
+                    AddSelectedCount = false,
                 });
+                score--;
             }
             return results;
         }
