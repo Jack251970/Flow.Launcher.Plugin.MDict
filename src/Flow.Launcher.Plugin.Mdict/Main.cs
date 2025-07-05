@@ -59,7 +59,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
         else
         {
             var results = new List<Result>();
-            foreach (var word in Dict.FuzzySearch(querySearch, 99, 5))
+            foreach (var word in Dict.FuzzySearch(querySearch, Settings.FuzzySize, Settings.Distance))
             {
                 results.Add(new Result
                 {

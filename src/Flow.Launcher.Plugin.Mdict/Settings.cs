@@ -48,6 +48,34 @@ public class Settings : BaseModel
         }
     }
 
+    private int _fuzzySize = 99;
+    public int FuzzySize
+    {
+        get => _fuzzySize;
+        set
+        {
+            if (_fuzzySize != value)
+            {
+                _fuzzySize = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    private int _distance = 5;
+    public int Distance
+    {
+        get => _distance;
+        set
+        {
+            if (_distance != value)
+            {
+                _distance = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
     public void RestoreToDefault()
     {
         var defaultSettings = new Settings();
