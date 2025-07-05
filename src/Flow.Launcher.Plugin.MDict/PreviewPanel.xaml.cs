@@ -17,7 +17,6 @@ public partial class PreviewPanel : UserControl
         _word = word ?? throw new ArgumentNullException(nameof(word));
         InitializeComponent();
         // TODO: Use true dark mode if available
-        // TODO: Update ResultWebView2 when the system theme changes
         UpdateResultWebView2(true);
     }
 
