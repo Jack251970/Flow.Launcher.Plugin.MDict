@@ -41,7 +41,7 @@
 
             <TextBox
                 Grid.Column="0"
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Center"
                 IsReadOnly="True"
                 Text="{Binding DictPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
@@ -56,33 +56,33 @@
 
         <!--  Light Theme Css  -->
         <TextBlock
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="0"
             Margin="{StaticResource SettingPanelItemTopBottomMargin}"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Text="{DynamicResource flowlauncher_plugin_mdict_plugin_light_theme_css}" />
         <TextBox
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="1"
             Margin="{StaticResource SettingPanelItemLeftTopBottomMargin}"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
             Text="{Binding LightThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
         <!--  Dark Theme Css  -->
         <TextBlock
-            Grid.Row="3"
+            Grid.Row="2"
             Grid.Column="0"
             Margin="{StaticResource SettingPanelItemTopBottomMargin}"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Text="{DynamicResource flowlauncher_plugin_mdict_plugin_dark_theme_css}" />
         <TextBox
-            Grid.Row="3"
+            Grid.Row="2"
             Grid.Column="1"
             Margin="{StaticResource SettingPanelItemLeftTopBottomMargin}"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
             Text="{Binding DarkThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
