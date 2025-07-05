@@ -65,7 +65,6 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                 results.Add(new Result
                 {
                     Title = word.KeyText,
-                    SubTitle = Localize.flowlauncher_plugin_mdict_plugin_click_to_open_preview(),
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
                     Action = _ =>
                     {

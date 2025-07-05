@@ -11,7 +11,6 @@
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">請在設定中選擇一個字典檔案</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">請輸入内容以進行查詢</system:String>
-    <system:String x:Key="flowlauncher_plugin_mdict_plugin_click_to_open_preview">點擊或按下 Enter 鍵以預覽此單字</system:String>
 
     <!--  Settings  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">字典檔案路徑：</system:String>

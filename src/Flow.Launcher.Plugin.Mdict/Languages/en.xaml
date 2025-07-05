@@ -10,8 +10,7 @@
 
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">Please select a dictionary file in settings</system:String>
-    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">Please type query to search in the dictionary</system:String>
-    <system:String x:Key="flowlauncher_plugin_mdict_plugin_click_to_open_preview">Click or type enter to open preview of this word</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">Please enter to query in the dictionary</system:String>
 
     <!--  Settings  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">Dictionary file path:</system:String>
