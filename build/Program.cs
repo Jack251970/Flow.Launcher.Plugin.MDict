@@ -30,7 +30,7 @@ public static class Program
 public class BuildContext(ICakeContext context) : FrostingContext(context)
 {
     public string DotNetBuildConfig { get; set; } = context.Argument("configuration", "Release");
-    public const string SlnFile = "../Flow.Launcher.Plugin.Mdict.sln";
+    public const string SlnFile = "../Flow.Launcher.Plugin.MDict.sln";
     public Lazy<SolutionParserResult> DefaultSln { get; set; } = new Lazy<SolutionParserResult>(() => context.ParseSolution(SlnFile));
     public const string DeployFramework = "net7.0-windows";
     public string PublishDir = "output";
