@@ -18,10 +18,10 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
 
     private const string VirtualHost = "appassets";
 
-    private MdxDict? Dict;
-    private string? DictDirectory;
+    private static MdxDict? Dict;
+    private static string? DictDirectory;
 
-    private readonly Dictionary<string, string> _webView2PathMapping = new();
+    private static readonly Dictionary<string, string> WebView2PathMapping = new();
 
     #region IPlugin Interface
 
@@ -122,7 +122,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
         DictDirectory = Path.GetDirectoryName(path);
         if (!string.IsNullOrEmpty(DictDirectory))
         {
-            _webView2PathMapping.Clear();
+            WebView2PathMapping.Clear();
             foreach (var file in Directory.EnumerateFiles(DictDirectory))
             {
                 var relatedPath = Path.GetRelativePath(DictDirectory, file);
@@ -132,14 +132,14 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     if (relatedPath.Contains('\\'))
                     {
                         var unixRelatedPath = relatedPath.Replace('\\', '/');
-                        _webView2PathMapping[relatedPath] = $"https://{VirtualHost}/{unixRelatedPath}";
-                        _webView2PathMapping[unixRelatedPath] = $"https://{VirtualHost}/{unixRelatedPath}";
+                        WebView2PathMapping[relatedPath] = $"https://{VirtualHost}/{unixRelatedPath}";
+                        WebView2PathMapping[unixRelatedPath] = $"https://{VirtualHost}/{unixRelatedPath}";
                     }
                     else if (relatedPath.Contains('/'))
                     {
                         var winRelatedPath = relatedPath.Replace('/', '\\');
-                        _webView2PathMapping[relatedPath] = $"https://{VirtualHost}/{relatedPath}";
-                        _webView2PathMapping[winRelatedPath] = $"https://{VirtualHost}/{relatedPath}";
+                        WebView2PathMapping[relatedPath] = $"https://{VirtualHost}/{relatedPath}";
+                        WebView2PathMapping[winRelatedPath] = $"https://{VirtualHost}/{relatedPath}";
                     }
                 }
             }
