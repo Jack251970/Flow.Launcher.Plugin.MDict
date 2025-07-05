@@ -10,6 +10,7 @@
 
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">请在设置中选择一个词典文件</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">请输入内容以进行查询</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_click_to_open_preview">点击或按回车键查看该词的预览</system:String>
 
     <!--  Settings  -->

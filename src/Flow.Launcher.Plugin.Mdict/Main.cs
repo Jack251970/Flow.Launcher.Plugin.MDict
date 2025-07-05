@@ -44,23 +44,37 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
             };
         }
 
-        var results = new List<Result>();
-        foreach (var word in Dict.FuzzySearch(query.Search, 99, 5))
+        var querySearch = query.Search;
+        if (string.IsNullOrEmpty(querySearch))
         {
-            results.Add(new Result
+            return new List<Result>
             {
-                Title = word.KeyText,
-                SubTitle = Localize.flowlauncher_plugin_mdict_plugin_click_to_open_preview(),
-                IcoPath = Context.CurrentPluginMetadata.IcoPath,
-                Action = _ =>
+                new()
                 {
-                    // TODO
-                    return false;
+                    Title = Localize.flowlauncher_plugin_mdict_plugin_please_type_query(),
+                    IcoPath = Context.CurrentPluginMetadata.IcoPath
                 }
-            });
+            };
         }
-
-        return results;
+        else
+        {
+            var results = new List<Result>();
+            foreach (var word in Dict.FuzzySearch(querySearch, 99, 5))
+            {
+                results.Add(new Result
+                {
+                    Title = word.KeyText,
+                    SubTitle = Localize.flowlauncher_plugin_mdict_plugin_click_to_open_preview(),
+                    IcoPath = Context.CurrentPluginMetadata.IcoPath,
+                    Action = _ =>
+                    {
+                        // TODO
+                        return false;
+                    }
+                });
+            }
+            return results;
+        }
     }
 
     public void Init(PluginInitContext context)
