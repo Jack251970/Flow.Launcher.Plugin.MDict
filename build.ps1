@@ -2,7 +2,7 @@
 Set-Location -Path $PSScriptRoot
 
 # Debug: Confirm the directory (optional)
-Write-Host "Build Clipboard+ in: $(Get-Location)"
+Write-Host "Build MDict in: $(Get-Location)"
 
 # Run the build command (path is now relative to the script's location)
 dotnet run --project build/Build.csproj
