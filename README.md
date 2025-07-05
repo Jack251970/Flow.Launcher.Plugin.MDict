@@ -16,7 +16,7 @@
 
 ## ⭐ Features
 
-- Search words in MDict dictionary files
+- Fuzzy search entries in MDict dictionaries
 - Dictionary file light / dark theme support
 
 ## 🖼️ Screenshots
@@ -58,11 +58,11 @@
 
 The default action keyword is `md`, you can change it in the Flow Launcher.
 
-### 1. Setup MDict Dictionary
+### 1.1 Setup MDict Dictionary
 
 Firstly, open the plugin settings in Flow Launcher.
 
-#### 1. Setup Dictionary File
+#### 1.2 Setup Dictionary File
 
 By clicking the `Select` button in the settings, you can add MDict dictionary file.
 
@@ -78,9 +78,8 @@ and then you should set the light css to `css\light.css` and dark css to `css\da
 
 ### 2. Search MDict Dictionary
 
-For Windows 10 and Windows 11, if you want to merge clipboard history records from Windows Clipboard History, you can enable `Merge Windows Clipboard history into data source` option. (v2.0.0+)
-
-If you want to make query records fully match the Windows clipboard history, you can enable `Use only Windows clipboard history as data source option`. Under this mode, records of files format will not shown in the list. Records from the database will no longer be loaded, and records cannot be saved or pinned to the database. (v2.1.1+)
+Type the action keyword `md` followed by a space and then the word you want to search in the MDict dictionary.
+The plugin will use fuzzy search to find the entries in the dictionary.
 
 ## 📚 Reference
 
