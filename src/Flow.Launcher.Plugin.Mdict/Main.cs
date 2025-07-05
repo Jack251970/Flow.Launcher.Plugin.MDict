@@ -112,7 +112,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
 
     #region Dictionary Management
 
-    private void LoadDictionary(string path)
+    private static void LoadDictionary(string path)
     {
         // Check path exists
         if (string.IsNullOrEmpty(path) || !File.Exists(path)) return;
@@ -145,6 +145,11 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                         var winRelatedPath = relatedPath.Replace('/', '\\');
                         WebView2PathMapping[relatedPath] = $"https://{VirtualHost}/{relatedPath}";
                         WebView2PathMapping[winRelatedPath] = $"https://{VirtualHost}/{relatedPath}";
+                    }
+                    // Else just add the related path as it is
+                    else
+                    {
+                        WebView2PathMapping[relatedPath] = $"https://{VirtualHost}/{relatedPath}";
                     }
                 }
             }
