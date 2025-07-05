@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/github/license/Jack251970/Flow.Launcher.Plugin.MDict">
 </p>
 
-**This plugin is a MDict dictionary for [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher). It can help you manage your clipboard history and Windows Clipboard History with support for text, images, and files.**
+**This plugin is a MDict dictionary searcher for [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher). It can help you search entries in MDict dictionaries.**
 
 ## ⭐ Features
 
