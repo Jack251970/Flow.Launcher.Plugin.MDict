@@ -14,14 +14,14 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
 
     internal static Settings Settings { get; private set; } = null!;
 
+    internal const string VirtualHost = "appassets";
+
+    internal static MdxDict? Dict { get; private set; }
+    internal static string? DictDirectory { get; private set; }
+
+    internal static Dictionary<string, string> WebView2PathMapping { get; } = new();
+
     private readonly static string ClassName = nameof(Main);
-
-    private const string VirtualHost = "appassets";
-
-    private static MdxDict? Dict;
-    private static string? DictDirectory;
-
-    private static readonly Dictionary<string, string> WebView2PathMapping = new();
 
     #region IPlugin Interface
 
