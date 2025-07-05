@@ -18,7 +18,7 @@ public partial class SettingsPanel : UserControl
     {
         var dlg = new Microsoft.Win32.OpenFileDialog
         {
-            Filter = Localize.flowlauncher_plugin_mdict_plugin_md_files()
+            Filter = $"{Localize.flowlauncher_plugin_mdict_plugin_md_files()} (*.mdx)|*.mdx"
         };
 
         if (dlg.ShowDialog() == true && !string.IsNullOrEmpty(dlg.FileName))
