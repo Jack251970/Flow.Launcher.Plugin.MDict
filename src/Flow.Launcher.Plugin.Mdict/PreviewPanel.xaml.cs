@@ -58,6 +58,7 @@ public partial class PreviewPanel : UserControl
             Main.DictDirectory,
             Microsoft.Web.WebView2.Core.CoreWebView2HostResourceAccessKind.Allow
         );
+
         ResultWebView2.NavigateToString(newDefinition.ToString());
     }
 }
