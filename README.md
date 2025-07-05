@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/Flow.Launcher.Plugin.MDict/Images/icon.png" width="90">
+  <img src="./src/Flow.Launcher.Plugin.Mdict/Images/icon.png" width="90">
 </p>
 
 # Flow Launcher MDict Plugin
