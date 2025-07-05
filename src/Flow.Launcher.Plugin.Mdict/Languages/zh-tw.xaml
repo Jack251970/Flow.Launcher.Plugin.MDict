@@ -6,7 +6,7 @@
 
     <!--  General  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_name">MDict</system:String>
-    <system:String x:Key="flowlauncher_plugin_mdict_plugin_description">在 MDict 詞典中搜索</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_description">在 MDict 詞典中搜索詞條</system:String>
 
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">請在設定中選擇一個字典檔案</system:String>
