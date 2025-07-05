@@ -12,21 +12,12 @@
   <img src="https://img.shields.io/github/license/Jack251970/Flow.Launcher.Plugin.MDict">
 </p>
 
-**This plugin is a clipboard manager for [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher). It can help you manage your clipboard history and Windows Clipboard History with support for text, images, and files.**
+**This plugin is a MDict dictionary for [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher). It can help you manage your clipboard history and Windows Clipboard History with support for text, images, and files.**
 
 ## ⭐ Features
 
-- Copy & delete & pin record
-- Cache images to folder
-- Manage records in list and database
-- Preview panel for text, images, and files
-- Persistent keep records in database
-- Words count for text
-- Customize copy actions
-- Clean clipboard
-- Copy files by sorting names
-- Manage Windows clipboard history (Windows 10, 11)
-- Sync with Windows clipboard history (Windows 10, 11)
+- Search words in MDict dictionary files
+- Dictionary file light / dark theme support
 
 ## 🖼️ Screenshots
 
@@ -67,31 +58,25 @@
 
 The default action keyword is `md`, you can change it in the Flow Launcher.
 
-### 1. Copy Clipboard Records
+### 1. Setup MDict Dictionary
 
-Click `Copy` or directly the `search result` to copy the data of the current record to clipboard with default options, which you can set in settings.
+Firstly, open the plugin settings in Flow Launcher.
 
-Click `Pin` to pin the current record to the topmost the query list.
+#### 1. Setup Dictionary File
 
-Click `Save` to save the current record to the database.
+By clicking the `Select` button in the settings, you can add MDict dictionary file.
 
-Click `Delete` to delete the record from list and database.
+Select the mdx file you want to use, for example, `C:\MDict\mydict.mdx`.
 
-### 2. Cache Clipboard Images
+#### 2. Setup Css Files
 
-If you want to automatically save images in your clipboard to a local cache folder, open the `Cache clipboard images in folder` option in settings.
+Add css files for light and dark theme support.
+These css files should use the relative path to the folder of the dictionary file.
 
-Click `Open cache folder` to view them in the folder `Plugin Settings Directory\CachedImages`.
+For example, if your dictionary file is `C:\MDict\mydict.mdx` and the css files are `C:\MDict\css\light.css` and `C:\MDict\css\dark.css`,
+and then you should set the light css to `css\light.css` and dark css to `css\dark.css` in the settings.
 
-### 3. Save Records to Database
-
-If you want to keep the text, images or files in the database, open the `Keep text`, `Keep images` or `Keep files` option in settings.
-
-This will automatically save the clipboard data of these formats to the database, and you won't lose them when you exit the Flow Launcher or shutdown your computer.
-
-> Note: It is recommended to cache images using `Cache clipboard images in folder` option, saving large images via `Keep images` to database may affect Flow Launcher performance.
-
-### 4. Windows Clipboard History
+### 2. Search MDict Dictionary
 
 For Windows 10 and Windows 11, if you want to merge clipboard history records from Windows Clipboard History, you can enable `Merge Windows Clipboard history into data source` option. (v2.0.0+)
 
@@ -100,8 +85,8 @@ If you want to make query records fully match the Windows clipboard history, you
 ## 📚 Reference
 
 - [ICONS](https://icons8.com/icons)
-- [ClipboardR](https://github.com/rainyl/Flow.Launcher.Plugin.ClipboardR)
-- [SharpClipboard](https://github.com/Willy-Kimura/SharpClipboard)
+- [MDict.Csharp](https://github.com/Jack251970/MDict.Csharp)
+- [WindowManager](https://github.com/Jack251970/Flow.Launcher.Plugin.WindowManager)
 
 ## 📄 License
 
