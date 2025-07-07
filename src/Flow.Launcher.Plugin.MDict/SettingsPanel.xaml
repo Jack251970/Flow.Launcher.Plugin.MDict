@@ -68,7 +68,8 @@
             Margin="{StaticResource SettingPanelItemLeftTopBottomMargin}"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Text="{Binding LightThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            Text="{Binding LightThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            Visibility="Collapsed" />
 
         <!--  Dark Theme Css  -->
         <TextBlock
@@ -77,7 +78,8 @@
             Margin="{StaticResource SettingPanelItemTopBottomMargin}"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
-            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_dark_theme_css}" />
+            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_dark_theme_css}"
+            Visibility="Collapsed" />
         <TextBox
             Grid.Row="2"
             Grid.Column="1"

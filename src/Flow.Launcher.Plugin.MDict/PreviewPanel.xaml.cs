@@ -30,7 +30,7 @@ public partial class PreviewPanel : UserControl
         var newDefinition = new StringBuilder(Definition);
 
         // Replace the light and dark theme CSS based on the system theme
-        if (!string.IsNullOrEmpty(Main.Settings.LightThemeCss) && !string.IsNullOrEmpty(Main.Settings.DarkThemeCss))
+        /*if (!string.IsNullOrEmpty(Main.Settings.LightThemeCss) && !string.IsNullOrEmpty(Main.Settings.DarkThemeCss))
         {
             if (isDarkTheme)
             {
@@ -40,7 +40,7 @@ public partial class PreviewPanel : UserControl
             {
                 newDefinition.Replace(Main.Settings.DarkThemeCss, Main.Settings.LightThemeCss);
             }
-        }
+        }*/
 
         // Replace relative paths with virtual host urls
         foreach (var kvp in Main.WebView2PathMapping)
