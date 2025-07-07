@@ -61,16 +61,14 @@
             Margin="{StaticResource SettingPanelItemTopBottomMargin}"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
-            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_light_theme_css}"
-            Visibility="Collapsed" />
+            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_light_theme_css}" />
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
             Margin="{StaticResource SettingPanelItemLeftTopBottomMargin}"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Text="{Binding LightThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-            Visibility="Collapsed" />
+            Text="{Binding LightThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
         <!--  Dark Theme Css  -->
         <TextBlock
@@ -79,16 +77,14 @@
             Margin="{StaticResource SettingPanelItemTopBottomMargin}"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
-            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_dark_theme_css}"
-            Visibility="Collapsed" />
+            Text="{DynamicResource flowlauncher_plugin_mdict_plugin_dark_theme_css}" />
         <TextBox
             Grid.Row="2"
             Grid.Column="1"
             Margin="{StaticResource SettingPanelItemLeftTopBottomMargin}"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Text="{Binding DarkThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-            Visibility="Collapsed" />
+            Text="{Binding DarkThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
     </Grid>
 </UserControl>
