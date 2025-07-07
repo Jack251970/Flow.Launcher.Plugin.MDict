@@ -68,7 +68,7 @@ By clicking the `Select` button in the settings, you can add MDict dictionary fi
 
 Select the mdx file you want to use, for example, `C:\MDict\mydict.mdx`.
 
-#### 2. Setup Css Files
+#### 1.3 Setup Css Files (v1.2.0+)
 
 Add css files for light and dark theme support.
 These css files should use the relative path to the folder of the dictionary file.
