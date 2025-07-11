@@ -11,6 +11,7 @@
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">Please select a dictionary file in settings</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">Please enter to query in the dictionary</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_error_loading_dictionary">Failed to load this dictionary! Please reselect a dictionary file</system:String>
 
     <!--  Settings  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">Dictionary file path:</system:String>

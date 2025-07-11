@@ -120,7 +120,17 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
         Dict?.Close();
 
         // Load the new dictionary
-        Dict = new MdxDict(path);
+        try
+        {
+            Dict = new MdxDict(path);
+        }
+        catch (Exception ex)
+        {
+            Context.API.ShowMsg(Localize.flowlauncher_plugin_mdict_plugin_error_loading_dictionary());
+            Context.API.LogException(ClassName, $"Failed to load dictionary from {path}", ex);
+            Dict = null;
+            return;
+        }
 
         // Load the web view paths
         DictDirectory = Path.GetDirectoryName(path);

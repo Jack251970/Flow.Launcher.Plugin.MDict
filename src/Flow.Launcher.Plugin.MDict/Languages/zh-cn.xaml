@@ -11,6 +11,7 @@
     <!--  Main  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">请在设置中选择一个词典文件</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">请输入内容以进行查询</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_error_loading_dictionary">无法加载该词典！请重新选择一个词典文件</system:String>
 
     <!--  Settings  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">词典文件路径：</system:String>

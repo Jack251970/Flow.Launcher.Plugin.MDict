@@ -9,8 +9,9 @@
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_description">在 MDict 詞典中搜索詞條</system:String>
 
     <!--  Main  -->
-    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">請在設定中選擇一個字典檔案</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_select_dictionary">請在設定中選擇一個詞典文件</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_please_type_query">請輸入内容以進行查詢</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_error_loading_dictionary">無法加載該詞典！請重新選擇一個詞典文件</system:String>
 
     <!--  Settings  -->
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dictionary_path">字典檔案路徑：</system:String>
