@@ -32,7 +32,6 @@ jobs:
         with:
           dotnet-version: |
             7.0.x
-            8.0.x
 
       # Restore dependencies for entire solution
       - name: Restore dependencies
