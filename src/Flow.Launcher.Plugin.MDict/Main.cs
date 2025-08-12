@@ -68,7 +68,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
                     Action = _ =>
                     {
-                        // TODO
+                        Context.API.CopyToClipboard(word.KeyText);
                         return false;
                     },
                     Score = score,
