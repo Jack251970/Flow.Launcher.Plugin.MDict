@@ -65,12 +65,14 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                 results.Add(new Result
                 {
                     Title = querySearch == word.KeyText ? $"{word.KeyText} √" : word.KeyText,
+                    AutoCompleteText = word.KeyText,
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
                     Action = _ =>
                     {
                         Context.API.CopyToClipboard(word.KeyText);
                         return false;
                     },
+                    CopyText = word.KeyText,
                     Score = score,
                     AddSelectedCount = false,
                     PreviewPanel = new Lazy<UserControl>(() => new PreviewPanel(word))
