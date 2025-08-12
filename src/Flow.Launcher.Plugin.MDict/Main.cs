@@ -65,7 +65,8 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                 results.Add(new Result
                 {
                     Title = querySearch == word.KeyText ? $"{word.KeyText} √" : word.KeyText,
-                    AutoCompleteText = word.KeyText,
+                    AutoCompleteText = string.IsNullOrEmpty(query.ActionKeyword) ?
+                        word.KeyText : $"{query.ActionKeyword} {word.KeyText}",
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
                     Action = _ =>
                     {
