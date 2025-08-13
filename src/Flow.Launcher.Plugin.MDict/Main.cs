@@ -35,6 +35,9 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                 {
                     Title = Localize.flowlauncher_plugin_mdict_plugin_please_select_dictionary(),
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
+                    AutoCompleteText = string.Empty,
+                    // TODO
+                    /*QuerySuggestionText = string.Empty,*/
                     Action = _ =>
                     {
                         Context.API.OpenSettingDialog();
@@ -52,7 +55,10 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                 new()
                 {
                     Title = Localize.flowlauncher_plugin_mdict_plugin_please_type_query(),
-                    IcoPath = Context.CurrentPluginMetadata.IcoPath
+                    IcoPath = Context.CurrentPluginMetadata.IcoPath,
+                    AutoCompleteText = string.Empty,
+                    // TODO
+                    /*QuerySuggestionText = string.Empty,*/
                 }
             };
         }
@@ -67,6 +73,8 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     Title = querySearch == word.KeyText ? $"{word.KeyText} √" : word.KeyText,
                     AutoCompleteText = string.IsNullOrEmpty(query.ActionKeyword) ?
                         word.KeyText : $"{query.ActionKeyword} {word.KeyText}",
+                    // TODO
+                    /*QuerySuggestionText = word.KeyText,*/
                     IcoPath = Context.CurrentPluginMetadata.IcoPath,
                     Action = _ =>
                     {
