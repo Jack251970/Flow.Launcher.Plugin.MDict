@@ -49,12 +49,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flow.Launcher.Localization" Version="0.0.4" />
+    <PackageReference Include="Flow.Launcher.Localization" Version="0.0.5" />
     <PackageReference Include="Flow.Launcher.Plugin" Version="4.7.0">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="MDict.Csharp" Version="0.1.2" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3351.48" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3405.78" />
   </ItemGroup>
 
 </Project>
