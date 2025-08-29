@@ -27,6 +27,15 @@ public partial class PreviewPanel : UserControl
         var (_, Definition) = Main.Dict.Fetch(_word);
         if (Definition is null) return;
 
+        // Handle redirect pattern: @@@LINK=TargetWord
+        if (TryParseLinkRedirection(Definition, out var redirectTo))
+        {
+            var (_, redirectedDef) = Main.Dict.Lookup(redirectTo);
+            if (redirectedDef is null) return;
+            // Use the new definition
+            Definition = redirectedDef;
+        }
+
         var newDefinition = new StringBuilder(Definition);
 
         // Replace the light and dark theme CSS based on the system theme
@@ -59,5 +68,31 @@ public partial class PreviewPanel : UserControl
         );
 
         ResultWebView2.NavigateToString(newDefinition.ToString());
+    }
+
+    private static bool TryParseLinkRedirection(string definition, out string target)
+    {
+        target = string.Empty;
+        if (string.IsNullOrEmpty(definition)) return false;
+
+        const string marker = "@@@LINK=";
+        var idx = definition.IndexOf(marker, StringComparison.Ordinal);
+        if (idx < 0) return false;
+
+        idx += marker.Length;
+        if (idx >= definition.Length) return false;
+
+        // Read until whitespace, newline, '<' (start of HTML), or end
+        var end = idx;
+        while (end < definition.Length)
+        {
+            var c = definition[end];
+            if (c == '\r' || c == '\n' || char.IsWhiteSpace(c) || c == '<')
+                break;
+            end++;
+        }
+
+        target = definition[idx..end].Trim().Trim('"', '\'');
+        return target.Length > 0;
     }
 }
