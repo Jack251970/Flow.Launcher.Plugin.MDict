@@ -44,7 +44,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Center"
                 IsReadOnly="True"
-                Text="{Binding DictPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                Text="{Binding DictPath, Mode=OneWay}" />
             <Button
                 Grid.Column="1"
                 Margin="{StaticResource SettingPanelItemLeftMargin}"
