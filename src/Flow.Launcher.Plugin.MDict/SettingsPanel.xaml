@@ -15,6 +15,7 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -85,6 +86,17 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
             Text="{Binding DarkThemeCss, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--  Enable Spell Check  -->
+        <CheckBox
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="{StaticResource SettingPanelItemTopBottomMargin}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="{DynamicResource flowlauncher_plugin_mdict_plugin_enable_spell_check}"
+            IsChecked="{Binding EnableCheck, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
     </Grid>
 </UserControl>

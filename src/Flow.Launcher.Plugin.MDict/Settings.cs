@@ -76,6 +76,20 @@ public class Settings : BaseModel
         }
     }
 
+    private bool _enableCheck = false;
+    public bool EnableCheck
+    {
+        get => _enableCheck;
+        set
+        {
+            if (_enableCheck != value)
+            {
+                _enableCheck = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
     public void RestoreToDefault()
     {
         var defaultSettings = new Settings();

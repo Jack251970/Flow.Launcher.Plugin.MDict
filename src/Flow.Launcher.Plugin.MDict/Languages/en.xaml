@@ -19,5 +19,6 @@
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_md_files">MDict Files</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_light_theme_css">Light theme css relative path:</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dark_theme_css">Dark theme css relative path:</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_enable_spell_check">Enable spell check for search inputs</system:String>
 
 </ResourceDictionary>

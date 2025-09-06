@@ -19,5 +19,6 @@
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_md_files">MDict 文件</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_light_theme_css">浅色主题 CSS 相对路径：</system:String>
     <system:String x:Key="flowlauncher_plugin_mdict_plugin_dark_theme_css">深色主题 CSS 相对路径：</system:String>
+    <system:String x:Key="flowlauncher_plugin_mdict_plugin_enable_spell_check">对搜索输入启用拼写检查</system:String>
 
 </ResourceDictionary>
