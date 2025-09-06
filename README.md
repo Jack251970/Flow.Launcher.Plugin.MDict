@@ -18,6 +18,7 @@
 
 - Fuzzy search entries in MDict dictionaries
 - Dictionary file light / dark theme support
+- Spell check support
 
 ## 🖼️ Screenshots
 
