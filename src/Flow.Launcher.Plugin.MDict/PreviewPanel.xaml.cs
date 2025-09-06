@@ -16,8 +16,7 @@ public partial class PreviewPanel : UserControl
     {
         _word = word ?? throw new ArgumentNullException(nameof(word));
         InitializeComponent();
-        // TODO: Use true dark mode if available
-        UpdateResultWebView2(true);
+        UpdateResultWebView2(Main.Context.API.IsApplicationDarkTheme());
     }
 
     private async void UpdateResultWebView2(bool isDarkTheme)
