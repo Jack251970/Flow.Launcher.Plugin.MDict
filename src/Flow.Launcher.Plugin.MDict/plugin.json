@@ -8,5 +8,6 @@
   "Language": "csharp",
   "Website": "https://github.com/Jack251970/Flow.Launcher.Plugin.MDict",
   "IcoPath": "Images/icon.png",
-  "ExecuteFileName": "Flow.Launcher.Plugin.MDict.dll"
+  "ExecuteFileName": "Flow.Launcher.Plugin.MDict.dll",
+  "MinimumAppVersion": "2.0.0"
 }
