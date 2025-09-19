@@ -72,7 +72,15 @@ Select the mdx file you want to use, for example, `C:\MDict\mydict.mdx`.
 #### 1.3 Setup Css Files (v1.2.0+)
 
 Add css files for light and dark theme support.
-These css files should use the relative path to the folder of the dictionary file.
+
+##### 1.3.1 Edit Css Files
+
+Generally, MDict does not support multiple Css files, so the Css files for other themes should be edited by yourself.
+Copy the content of the original Css file and modify it to fit your needs.
+
+##### 1.3.2 Set Css Files
+
+In plugin setting panel, these css files should use the relative path to the folder of the dictionary file.
 
 For example, if your dictionary file is `C:\MDict\mydict.mdx` and the css files are `C:\MDict\css\light.css` and `C:\MDict\css\dark.css`,
 and then you should set the light css to `css\light.css` and dark css to `css\dark.css` in the settings.
