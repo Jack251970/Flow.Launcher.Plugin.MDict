@@ -47,7 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flow.Launcher.Localization" Version="0.0.5" />
+    <PackageReference Include="Flow.Launcher.Localization" Version="0.0.6" />
     <PackageReference Include="Flow.Launcher.Plugin" Version="5.0.0">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
