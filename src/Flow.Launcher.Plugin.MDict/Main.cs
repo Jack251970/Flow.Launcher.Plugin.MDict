@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Globalization;
 using System.IO;
 using System.Windows.Controls;
 
@@ -68,7 +67,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
             {
                 results.Add(new Result
                 {
-                    Title = Settings.EnableCheck && 
+                    Title = Settings.EnableCheck &&
                         string.Equals(querySearch, word.KeyText, StringComparison.OrdinalIgnoreCase) ?
                             $"{word.KeyText} √" :
                             word.KeyText,
@@ -188,11 +187,6 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
     public string GetTranslatedPluginDescription()
     {
         return Localize.flowlauncher_plugin_mdict_plugin_description();
-    }
-
-    public void OnCultureInfoChanged(CultureInfo cultureInfo)
-    {
-
     }
 
     #endregion
