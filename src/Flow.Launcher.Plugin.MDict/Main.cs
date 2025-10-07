@@ -18,7 +18,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
     internal static MdxDict? Dict { get; private set; }
     internal static string? DictDirectory { get; private set; }
 
-    internal static Dictionary<string, string> WebView2PathMapping { get; } = new();
+    internal static Dictionary<string, string> WebView2PathMapping { get; } = [];
 
     private readonly static string ClassName = nameof(Main);
 
