@@ -28,8 +28,8 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
     {
         if (Dict == null)
         {
-            return new List<Result>
-            {
+            return
+            [
                 new()
                 {
                     Title = Localize.flowlauncher_plugin_mdict_plugin_please_select_dictionary(),
@@ -42,14 +42,14 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                         return true;
                     }
                 }
-            };
+            ];
         }
 
         var querySearch = query.Search;
         if (string.IsNullOrEmpty(querySearch))
         {
-            return new List<Result>
-            {
+            return
+            [
                 new()
                 {
                     Title = Localize.flowlauncher_plugin_mdict_plugin_please_type_query(),
@@ -57,7 +57,7 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
                     AutoCompleteText = string.Empty,
                     QuerySuggestionText = string.Empty,
                 }
-            };
+            ];
         }
         else
         {
