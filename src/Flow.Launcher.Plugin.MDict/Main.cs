@@ -45,7 +45,8 @@ public class Main : IPlugin, IPluginI18n, ISettingProvider, IDisposable
             ];
         }
 
-        var querySearch = query.Search;
+        // ToLower ensures the consistency of search behavior for MDict.Csharp
+        var querySearch = query.Search.ToLower();
         if (string.IsNullOrEmpty(querySearch))
         {
             return
