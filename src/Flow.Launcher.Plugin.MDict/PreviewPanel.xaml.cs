@@ -16,6 +16,9 @@ public partial class PreviewPanel : UserControl
     {
         _word = word ?? throw new ArgumentNullException(nameof(word));
         InitializeComponent();
+        // Solve the flickering problem of WebView2
+        // https://www.bytezonex.com/archives/VdeJAEYe.html
+        ResultWebView2.DefaultBackgroundColor = System.Drawing.Color.Transparent;
         UpdateResultWebView2(Main.Context.API.IsApplicationDarkTheme());
     }
 
