@@ -51,7 +51,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="MDict.Csharp" Version="0.1.2" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3856.49" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3912.50" />
   </ItemGroup>
 
 </Project>
